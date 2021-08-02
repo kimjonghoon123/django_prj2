@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>{% block head_title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+{% include 'blog/navbar.html' %}
+
+
+
+<section>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 text-black-50t">
+                <h3 class="mt-5" text-black-50t>부산 항만 공사</h3>
+                {% for p in busanann %}
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h13><a href="{{ p.link }}" class="text-decoration-none text-dark">{{ p.title }}</a></h13>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="col-lg-6 mt-5">
+                <h3 class="text-black-50t">인천 항만 공사</h3>
+                {% for p in incheonann %}
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h13><a href="{{ p.link }}" class="text-decoration-none text-dark">{{ p.title }}</a></h13>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+     <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 text-black-50t">
+                <h3 class="mt-5" text-black-50t>여수 항만 공사</h3>
+                {% for p in yeosuann %}
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h13><a href="{{ p.link }}" class="text-decoration-none text-dark">{{ p.title }}</a></h13>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="col-lg-6 mt-5">
+                <h3 class="text-black-50t">울산 항만 공사</h3>
+                {% for p in ulsanann %}
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h13><a href="{{ p.link }}" class="text-decoration-none text-dark">{{ p.title }}</a></h13>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
