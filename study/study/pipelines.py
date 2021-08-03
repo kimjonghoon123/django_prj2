@@ -18,10 +18,10 @@ class annMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
@@ -46,10 +46,10 @@ class youtuMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
@@ -74,10 +74,10 @@ class ulsanMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
@@ -101,10 +101,10 @@ class yeosuMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
@@ -129,10 +129,10 @@ class busanMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
@@ -157,10 +157,10 @@ class incheonMySQLPipeline(object):
     def open_spider(self, spider):
         settings = spider.settings
         params = {
-            'host': settings.get('MYSQL_HOST', 'localhost'),
+            'host': settings.get('MYSQL_HOST', '3.36.124.138'),
             'db': settings.get('MYSQL_DATABASE', 'django'),
             'user': settings.get('MYSQL_USER', 'root'),
-            'passwd': settings.get('MYSQL_PASSWORD', 'whdgns1002@'),
+            'passwd': settings.get('MYSQL_PASSWORD', '1357'),
             'charset': settings.get('MYSQL_CHARSET', 'utf8mb4'),
         }
         self.conn = pymysql.connect(**params)
